@@ -13,24 +13,24 @@ public class Calculator {
          * Continue code here to ask for the first number, the operator, and the second number, IN THAT ORDER
          */
          System.out.print("Input the first number:");   
-         int i=scan.nextInt();
+         int num1=scan.nextInt();
          System.out.print("Input the operator:");
-         String j=scan.nextLine();
+         String operator=scan.next();
          System.out.print("Input the second number");
-         int a=scan.nextInt();
+         int num2=scan.nextInt();
         
-         switch (j) {
+         switch (operator) {
          case "+":
-           add(i, a);
+           System.out.print(add(num1, num2));
            break;
         case "-":
-          subtract(i, a);
+           System.out.print(subtract(num1, num2));
           break;
          case "*":
-            multiply(i, a);
+              System.out.print(multiply(num1, num2));
            break;
          case "/":
-          divide(i,a);
+            System.out.print(divide(num1,num2));
            default:
            break;
          // Decide on the operation to perform 
@@ -48,26 +48,26 @@ public class Calculator {
      */
     public String add(int a, int b) {
         int s=a+b;
-         String v= a+" + "+b+" = " +s;
+         String v=(a+" + "+b+" = " +s);
          return v;
         
     }
 
     public String subtract(int a, int b) {
         int s=a-b;
-        String v= a+" - "+b+" = "+s;
+        String v= (a+" - "+b+" = "+s);
         return v;
     }
 
     public String multiply(int a, int b) {
         int s=a*b;
-      String v= a+" * "+b+" = "+s;
+      String v= (a+" * "+b+" = "+s);
       return v;
     }
 
     public String divide(int a, int b) {
       double s=(double)a/b;
-     String v= a+" / "+b+" = "+s;
+     String v= (a+" / "+b+" = "+s);
      return v;
     }
 }
