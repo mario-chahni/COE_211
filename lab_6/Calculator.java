@@ -8,7 +8,7 @@ public class Calculator {
     // Constructor to initialize the calculator
     public Calculator() {
         // Get user input
-        Scanner scanCalc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         /**
          * Continue code here to ask for the first number, the operator, and the second number, IN THAT ORDER
          */
