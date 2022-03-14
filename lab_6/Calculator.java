@@ -20,16 +20,16 @@ public class Calculator {
          int a=scan.nextInt();
         
          switch (j) {
-         case '+'
+         case "+":
            add(i, a);
            break;
-        case '-'
+        case "-":
           subtract(i, a);
           break;
-         case '*'
+         case "*":
             multiply(i, a);
            break;
-         case '/'
+         case "/":
           divide(i,a);
            default:
            break;
@@ -39,26 +39,35 @@ public class Calculator {
          * Hint: Switch statement
          */
     }
-
+    }
+    /**
+     *
+     * @param 
+     * @param
+     * @return
+     */
     public String add(int a, int b) {
-         
-        int s=a+b
-         System.out.print(a+" + "+b+" = " +s);
+        int s=a+b;
+         String v= a+" + "+b+" = " +s;
+         return v;
         
     }
 
     public String subtract(int a, int b) {
-        int s=a-b
-        System.out.print(a+" - "+b+" = "+s);
+        int s=a-b;
+        String v= a+" - "+b+" = "+s;
+        return v;
     }
 
     public String multiply(int a, int b) {
-        int s=a*b
-      System.out.print(a+" * "+b+" = "+s);
+        int s=a*b;
+      String v= a+" * "+b+" = "+s;
+      return v;
     }
 
     public String divide(int a, int b) {
-      double s=(double)a/b
-      System.out.print(a+" / "+b+" = "+s);
+      double s=(double)a/b;
+     String v= a+" / "+b+" = "+s;
+     return v;
     }
 }
