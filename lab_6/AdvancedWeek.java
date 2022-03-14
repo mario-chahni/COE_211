@@ -13,7 +13,7 @@ private String day_5 = "Friday";
     private String day_6 = "Saturday";
     private int day_6_index = 6;
     private String day_7 = "Sunday";
-    private int day_7_index = 1;
+    private int day_7_index = 7;
      * Continue filling variables
      */
 
